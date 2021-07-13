@@ -1,6 +1,0 @@
-/obj/*
-/archive/*
-**/bin/**/*
-/xml/*
-
-!**/bin/**/*.swf

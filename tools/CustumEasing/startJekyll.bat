@@ -1,2 +1,0 @@
-cd ../../website
-jekyll s
