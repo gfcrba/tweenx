@@ -19,7 +19,7 @@ class OutputManager
         this.context = context;
         this.mode = switch (context.storage.get(StorageKey.Output))
         {
-            case Option.Some(data) if (Std.is(data, OutputMode)):
+            case Option.Some(data) if (OfType(data, OutputMode)):
                 data;
                 
             case _:

@@ -107,8 +107,8 @@ class Main {
 
                     if (d.length > 2) {
                         var el:Dynamic = d[2];
-                        if (Std.is(el, String)) cl0 = cl1 = el;
-                        else if (Std.is(el, Array)) {
+                        if (Std.isOfType(el, String)) cl0 = cl1 = el;
+                        else if (Std.isOfType(el, Array)) {
                             cl0 = el[0];
                             cl1 = el[1];
                         }

@@ -15,7 +15,7 @@ class LocalizeManager
     {
         locale = switch (context.storage.get(StorageKey.Locale))
         {
-            case Option.Some(data) if (Std.is(data, LocaleKind)):
+            case Option.Some(data) if (Std.isOfType(data, LocaleKind)):
                 data;
                 
             case _:
