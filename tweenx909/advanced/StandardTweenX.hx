@@ -34,7 +34,7 @@ class StandardTweenX<T> extends TweenX {
         if (! Reflect.hasField(target, key))
             throw error(Type.getClassName(Type.getClass(target)) + " does not have field '" + key + "'");
         #else
-        if (! Std.is(Reflect.field(target, key), Dynamic))
+        if (! Std.isOfType(Reflect.field(target, key), Dynamic))
             throw error(Type.getClassName(Type.getClass(target)) + " does not have field '" + key + "'");
         #end
     }
