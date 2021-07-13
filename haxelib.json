@@ -8,6 +8,6 @@
   "releasenote": "Fix warnings for Haxe 4.0.0",
   "contributors": ["shohei909"],
   "dependencies": {
-    "tweenxcore": "1.0.1"
+    "tweenxcore": "1.0.4"
   }
 }
