@@ -47,7 +47,7 @@ class Main {
     public static function attach(clazz:Class<Dynamic>, width:Int, height:Int, playMode:PlayMode):Void {
         var name = Type.getClassName(clazz);
         var element = Browser.document.getElementById(name);
-        if (element != null && Std.is(element, CanvasElement)) {
+        if (element != null && Std.isOfType(element, CanvasElement)) {
             var canvas = cast(element, CanvasElement);
             canvas.width = width;
             canvas.height = height;
